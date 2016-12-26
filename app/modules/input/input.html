@@ -1,2 +1,5 @@
-<input/>
-<button (click)="enter()">Submit</button>
+<input #val/>
+<button (click)="enter(val.value)">Submit</button>
+<ul>
+	<li *ngFor="let todo of todos">{{todo}}</li>
+</ul>
