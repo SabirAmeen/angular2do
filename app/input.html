@@ -1,6 +1,11 @@
 <input placeholder="Add a todo" #val/>
 <button (click)="enter(val.value)">Add</button>
 <button>Clear</button>
-<ul>
-	<li *ngFor="let todo of todos">{{todo}}</li>
+<span>Total todos: {{totalcount()}}</span>
+<ul class="list">
+	<li *ngFor="let todo of todos; let i=index">
+	 <input type="checkbox" [(ngModel)]="todo.done">
+	 <span class="done-{{todo.done}}">{{todo.text}}</span>
+	 <i class="fa fa-close" (click)="remove(i)"></i>
+	</li>
 </ul>

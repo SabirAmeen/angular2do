@@ -5,8 +5,9 @@ import {header} from './header';
 import {input} from './input';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule}   from '@angular/forms';
 @NgModule({
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   declarations: [header, input],
   bootstrap: [header]
 })

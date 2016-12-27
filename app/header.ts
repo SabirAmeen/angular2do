@@ -2,9 +2,8 @@ import {Component} from '@angular/core';
 import {input} from './input';
 
 @Component({
-	moduleId: module.id,
   selector: 'my-app',
-  templateUrl: './header.html',
+  templateUrl: './app/header.html',
 })
 export class header { 
 }

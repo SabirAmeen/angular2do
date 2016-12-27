@@ -15,6 +15,7 @@ var header_1 = require("./app/modules/header/header");
 var input_1 = require("./app/modules/input/input");
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var forms_1 = require("@angular/forms");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -22,7 +23,7 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
         declarations: [header_1.header, input_1.input],
         bootstrap: [header_1.header]
     }),

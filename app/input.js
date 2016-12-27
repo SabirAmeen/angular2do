@@ -14,15 +14,20 @@ var input = (function () {
         this.todos = [];
     }
     input.prototype.enter = function (y) {
-        this.todos.push(y);
+        this.todos.push({ text: y, done: false });
+    };
+    input.prototype.totalcount = function () {
+        return this.todos.length;
+    };
+    input.prototype.remove = function (index) {
+        this.todos.splice(index, 1);
     };
     return input;
 }());
 input = __decorate([
     core_1.Component({
-        moduleId: module.id,
         selector: 'inputField',
-        templateUrl: './input.html'
+        templateUrl: './app/input.html'
     }),
     __metadata("design:paramtypes", [])
 ], input);
