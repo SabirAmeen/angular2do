@@ -6,13 +6,22 @@ import {Component,Input} from '@angular/core';
 })
 export class input {
 	todos=[];
+	ins;
 	enter(y){
-		this.todos.push({text:y, done:false});
+		if(y!=""){
+			this.todos.push({text:y, done:false});
+			this.ins=""
+		}
 	}
 	totalcount(){
 		return this.todos.length;
 	}
 	remove(index){
 		this.todos.splice(index,1);
+	}
+	clear(){
+	     	this.todos = this.todos.filter(function(item,index){
+      		return item.done!=true;
+       	})
 	}
 }

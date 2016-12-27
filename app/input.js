@@ -14,13 +14,21 @@ var input = (function () {
         this.todos = [];
     }
     input.prototype.enter = function (y) {
-        this.todos.push({ text: y, done: false });
+        if (y != "") {
+            this.todos.push({ text: y, done: false });
+            this.ins = "";
+        }
     };
     input.prototype.totalcount = function () {
         return this.todos.length;
     };
     input.prototype.remove = function (index) {
         this.todos.splice(index, 1);
+    };
+    input.prototype.clear = function () {
+        this.todos = this.todos.filter(function (item, index) {
+            return item.done != true;
+        });
     };
     return input;
 }());
