@@ -9,16 +9,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var header = (function () {
-    function header() {
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    return header;
+    return AppComponent;
 }());
-header = __decorate([
+AppComponent = __decorate([
     core_1.Component({
-        selector: 'header',
-        templateUrl: './app/header.html',
+        selector: 'my-app',
+        template: '<header></header><inputField></inputField>',
     }),
     __metadata("design:paramtypes", [])
-], header);
-exports.header = header;
+], AppComponent);
+exports.AppComponent = AppComponent;
