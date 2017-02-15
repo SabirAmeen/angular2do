@@ -13,6 +13,11 @@ export class input {
 			this.ins=""
 		}
 	}
+	onKey(event){
+		if(event.keyCode===13){
+			this.enter(this.ins);
+		}
+	}
 	totalcount(){
 		return this.todos.length;
 	}

@@ -19,6 +19,11 @@ var input = (function () {
             this.ins = "";
         }
     };
+    input.prototype.onKey = function (event) {
+        if (event.keyCode === 13) {
+            this.enter(this.ins);
+        }
+    };
     input.prototype.totalcount = function () {
         return this.todos.length;
     };

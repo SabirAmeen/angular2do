@@ -17,7 +17,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<header></header><inputField></inputField>',
+        template: "<header></header>\n  \t\t\t<inputField></inputField>",
     }),
     __metadata("design:paramtypes", [])
 ], AppComponent);
