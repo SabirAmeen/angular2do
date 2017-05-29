@@ -1,5 +1,5 @@
 <div class="input-section">
-	<input (keyup)="onKey($event)" placeholder="Add a todo" [(ngModel)]="ins" #val/>
+	<input (keyup)="onKey($event)" (blur)="enter(val.value)" placeholder="Add a todo" [(ngModel)]="ins" #val/>
 	<button (click)="enter(val.value)">Add</button>
 	<button (click)="clear()">Clear</button>
 	<span>Total todos: {{totalcount()}}</span>
