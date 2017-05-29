@@ -1,0 +1,52 @@
+body {
+    margin: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-section {}
+
+input {
+    border-style: none none solid;
+    outline: none;
+}
+
+button {
+    background-color: #0093ec;
+    color: #fff;
+    border-radius: 34px;
+    border: none;
+    outline: none;
+}
+
+i {
+    float: right;
+}
+
+input:focus {
+    border-bottom: 1px solid blue;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin: 10px 0;
+    background-color: #ddd;
+    min-height: 20px;
+}
+
+.done-true {
+    text-decoration: line-through;
+}
+
+@media (min-width: 768px) {
+    .input-section {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
