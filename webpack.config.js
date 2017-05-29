@@ -1,9 +1,13 @@
 var webpack = require('webpack');
 module.exports = {
-	entry: '.app/main.ts',
+	entry: {
+		app:'./app/main.ts',
+		vendor:'./app/vendor.ts',
+		polyfills:'./app/polyfills.ts'
+	},
 	output: {
 		path: './dist',
-		filename: 'app.bundle.js'
+		filename: '[name].js'
 	},
 	module:{
 		loaders:[
